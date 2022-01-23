@@ -1,0 +1,1 @@
+export const SERVICE_NAME = 'https://api.covid19api.com'

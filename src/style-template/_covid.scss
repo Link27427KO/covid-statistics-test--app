@@ -1,0 +1,94 @@
+.covid {
+  margin: 20px;
+}
+.covid-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    font-family: Roboto, serif;
+    margin-left: 30px
+  }
+  &__search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 1px 2px 2px 1px #e8e8e8;
+    border-radius: 10px;
+  }
+}
+.covid-dialog {
+  min-width: 400px;
+}
+.covid-table {
+  margin-top: 20px;
+}
+.search-input {
+  border: none;
+  font-size: 20px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.search-icon {
+  cursor: pointer;
+}
+
+.dialog-covid-card {
+  &__header {
+    text-align: center;
+    font-size: 24px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    &__icon {
+      display: flex;
+      align-items: center;
+    }
+    &__title {
+      margin-left: 20px;
+    }
+  }
+  &__button-block {
+    text-align: center;
+    margin-top: 30px;
+    &__button {
+      width: 120px;
+      border-radius: 10px;
+    }
+  }
+  }
+
+
+@media (max-width: 800px) {
+  .covid-header {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .search-input {
+    width: 80%;
+  }
+  .covid-header {
+    &__logo {
+      display: block;
+      text-align: center;
+
+    }
+    &__title {
+      font-size: 90%;
+    }
+  }
+
+}
